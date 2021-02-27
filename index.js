@@ -52,19 +52,19 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = 'nabutobot'; 
+const BotName = 'Jintan1990bot'; 
 const instagram = 'http://www.instagram.com/'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
-            + 'FN:nabuto\n' // Nama kamu
+            + 'FN:Jintan1990\n' // Nama kamu
             + 'ORG:Lexa;\n' // Nama bot
             + 'TEL;type=CELL;type=VOICE;waid=556993733829:+55 699373-3829\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '/','*','.'
 blocked = []
 limitawal = '999999999'
-cr = '*nabuto*'
+cr = '*Jintan1990*'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -289,11 +289,11 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD NABUTO BOT*',
+					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD Jintan1990 BOT*',
 					benned: 'Você para a banda, por favor, contate o proprietário para abrir sua banda',
 					ownerG: '[❗] Proprietário? Este é um recurso especial para o proprietário do bot ❌',
 					ownerB: '[❗] Proprietário? Este é um recurso especial para o proprietário do bot ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de nabuto. Registre-se para fazer amizade com o bot Nabuto por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar nabuto|14\n\n──「 Nabuto BOT 」──`,
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de Jintan1990. Registre-se para fazer amizade com o bot Jintan1990 por meio, \n\nCommand : ${prefix}daftar nama|idade\nExemplo : ${prefix}daftar Jintan1990|14\n\n──「 Jintan1990 BOT 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
@@ -730,7 +730,7 @@ if (text.includes("placa"))
 	
 				if (messagesC.includes("mandememe")){
 			client.updatePresence(from, Presence.composing)
-			data = fs.readFileSync('./src/nabutojokes.js');
+			data = fs.readFileSync('./src/Jintan1990jokes.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -750,7 +750,7 @@ if (text.includes("placa"))
 			switch(command) {
 				case 'help':
 				case 'menu':
-				case 'nabuto':
+				case 'Jintan1990':
 				case 'pika':
 					client.sendMessage(from, help(prefix), text)
 					break
@@ -1280,7 +1280,7 @@ if (text.includes("placa"))
 					pineq = await getBuffer(trest)
 					client.sendMessage(from, pineq, image, { caption: '*Pinterest*\n\n*Resultado Pesquisa : '+pinte+'*', quoted: mek })
 					break
-//@nabutoYT					
+//@Jintan1990YT					
 				case 'pokemon':
                     client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.fdci.se/rep.php?gambar=pokemon`, {method: 'get'})
@@ -1395,7 +1395,7 @@ if (text.includes("placa"))
 					reply(teks.trim())
 					await limitAdd(sender) 
 					break 
-				case 'textnabuto':
+				case 'textJintan1990':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
 					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
@@ -1535,7 +1535,7 @@ if (text.includes("placa"))
 					for (let V of premium) {
 						teks += `│+  @${V.split('@')[0]}\n`
 					}
-					teks += `│+ Total : ${premium.length}\n╰──────*「 *NABUTOBOT* 」*────`
+					teks += `│+ Total : ${premium.length}\n╰──────*「 *Jintan1990BOT* 」*────`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
@@ -1549,7 +1549,7 @@ if (text.includes("placa"))
 		        case 'wame':
                   client.updatePresence(from, Presence.composing) 
                   options = {
-                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*NABUTO DOMINA*`,
+                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*Jintan1990 DOMINA*`,
                   contextInfo: { mentionedJid: [sender] }
                   }
                   client.sendMessage(from, options, text, { quoted: mek } )
@@ -1602,7 +1602,7 @@ if (text.includes("placa"))
                 break
 				case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar NABUTO|14`)
+					if (args.length < 1) return reply(`Parameter Salah\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar Jintan1990|14`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
@@ -1773,8 +1773,8 @@ if (text.includes("placa"))
 					client.sendMessage(from, pok, image, { quoted: mek, caption: `*PINTEREST*\n\*Resultado da pesquisa* : *${tels}*`})
                     await limitAdd(sender)
 					break
-                case 'nabutojokes':
-				 data = fs.readFileSync('./src/nabutojokes.js');
+                case 'Jintan1990jokes':
+				 data = fs.readFileSync('./src/Jintan1990jokes.js');
                  jsonData = JSON.parse(data);
                  randIndex = Math.floor(Math.random() * jsonData.length);
                  randKey = jsonData[randIndex];
@@ -2449,13 +2449,13 @@ break
                    break
 					case 'totaluser':
 					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOO NABUTO BOT 👑* 」\n\`\`\``
+					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOO Jintan1990 BOT 👑* 」\n\`\`\``
 					no = 0
 					for (let hehehe of user) {
 						no += 1
 						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
 					}
-					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *NABUTO* 」*────`
+					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *Jintan1990* 」*────`
 					 client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
 					break
 				case 'desligar':
@@ -2589,7 +2589,7 @@ break
 					await limitAdd(sender) 
 					break 
 					
-// recursos anime, random @nabuto domina vida
+// recursos anime, random @Jintan1990 domina vida
 
                 case 'anjing':
                    if (!isGroup) return reply(ind.groupo())
@@ -2975,7 +2975,7 @@ break
 					buff = await getBuffer(anu.result)
 					client.sendMessage(from, buff, image, {quoted: mek})
 					break
-				case 'textnabuto':
+				case 'textJintan1990':
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(9)
 					if (tels.ength > 10) return reply('O texto é longo, até 9 caracteres')
@@ -3067,8 +3067,7 @@ break
 					break
 			    case 'owner':
 			    case 'dono':
-                    client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                    client.sendMessage(from, 'Meu dono é esse gasoso aí tal de "nabuto"🙄, chama ele aí ele diz que é "Shitpost"',MessageType.text, { quoted: mek} )
+               
                     break
                 case 'fitnah':	
 				case 'fake':          
@@ -3351,7 +3350,7 @@ break
 					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					me = client.user
 					uptime = process.uptime()
-					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* NABUTOBOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* \n*──────────────────*` , text, { quoted: mek, })
+					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* Jintan1990BOT\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* \n*──────────────────*` , text, { quoted: mek, })
 					break
 					case 'dellvip':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -3371,9 +3370,9 @@ break
 					client.sendMessage(from, mentioned)
 				    }
 					break
-					case 'nabutoadmin':
+					case 'Jintan1990admin':
 					tod = await getBuffer(`https://i.ibb.co/XDwBVDJ/1f2652c622fa.jpg`)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT NABUTO ✨* 」\n*│+ wa.me/556993733829*╰──────*「 *NABUTO* 」*────*\n\n*_SE QUER SER ADMIN DO BOT NABUTO_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMINBOT Jintan1990 ✨* 」\n*│+ wa.me/556993733829*╰──────*「 *Jintan1990* 」*────*\n\n*_SE QUER SER ADMIN DO BOT Jintan1990_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
@@ -3382,7 +3381,7 @@ break
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					sa = await getBuffer(`https://i.ibb.co/PcQ6tsB/79ac87b9358c.jpg`)
-					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/556993733829*╰──────*「 * NABUTO* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO NABUTO BOT_*\n*_Ketik #daftarvip*' })
+					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *PREMIUM USER👑* 」\n*│+ wa.me/556993733829*╰──────*「 * Jintan1990* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO Jintan1990 BOT_*\n*_Ketik #daftarvip*' })
 					break
 					case 'cekmod': 
  
@@ -3450,7 +3449,7 @@ break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*Nabuto Domina*'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*_Comandos basicos para bot:_*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*Jintan1990 Domina*'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -3513,7 +3512,7 @@ break
 				case 'canal':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://imgur.com/gallery/xuTCBPO`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do nabuto:*\n\n https://youtube.com/channel/UCZEtf9AlsC2zsJQwrfW-44w'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do Jintan1990:*\n\n https://youtube.com/channel/UCZEtf9AlsC2zsJQwrfW-44w'})
 					break
 				case 'nsfwloli1':
 					memein = await kagApi.memeindo()
@@ -3564,7 +3563,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(``)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* NABUTO\n*YOUTUBE:* https://youtube.com/channel/UCZEtf9AlsC2zsJQwrfW-44w\n*WPP:* wa.me/+556993733829\n*\n\nEspero que tenham gostado do bot️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* Jintan1990\n*YOUTUBE:* https://youtube.com/channel/UCZEtf9AlsC2zsJQwrfW-44w\n*WPP:* wa.me/+556993733829\n*\n\nEspero que tenham gostado do bot️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
